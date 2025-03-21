@@ -1,0 +1,20 @@
+# Terraform кеш та тимчасові файли  
+.terraform/  
+.terraform.lock.hcl  
+
+# Файли стану Terraform (не пушимо їх у репозиторій)  
+terraform.tfstate  
+terraform.tfstate.backup  
+terraform.tfstate.d/  # Додано, якщо є директорія зі станом  
+*.tfvars  
+*.tfvars.json  # Якщо використовуються JSON-файли змінних  
+
+# AWS провайдери та інші бінарні файли  
+terraform/providers/  
+terraform-provider-*  
+*.exe  # Взагалі не пушимо жодні .exe файли  
+
+# Логи та інші тимчасові файли  
+*.log  
+*.bak  
+*.tmp  
